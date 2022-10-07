@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   outline: none;
+  transition: 200ms all ease;
 }
 img {
   width: 100%;
