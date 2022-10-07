@@ -10,7 +10,7 @@ Using HTML CSS and JavaScript
 
 ## Preview
 
-![](</All%20Birds%20Clone%20(1).png>)
+![](</images/All%20Birds%20Clone%20(1).png>)
 
 ## Live Link
 
