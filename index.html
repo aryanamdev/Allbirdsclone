@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Birds Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <div class="fixed">
+        <nav class="navbar">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="navItemsContainer">
+            <li class="navItems">Men</li>
+            <li class="navItems">Women</li>
+            <li class="navItems">Kids</li>
+            <li class="navItems">Sale</li>
+          </ul>
+
+          <!-- logo -->
+          <div class="logo">
+            <img
+              class="jsx-3303599365 AllbirdsLogo ls-is-cached Lazy--loaded"
+              data-src="//cdn.allbirds.com/image/upload/v1571355713/icons/allbirds-logo.svg"
+              alt=""
+              src="//cdn.allbirds.com/image/upload/v1571355713/icons/allbirds-logo.svg"
+            />
+          </div>
+
+          <!-- navitems -->
+          <ul class="navItemsContainerWrapper">
+            <ul class="navItemsContainer">
+              <li class="navItems">Sustainability</li>
+              <li class="navItems">Rerun</li>
+              <li class="navItems">Store</li>
+            </ul>
+            <ul class="navItemsContainer-icons">
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-sharp fa-solid fa-circle-question"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </ul>
+          </ul>
+
+          <!-- icons -->
+          <ul class="navItemsContainer-sm">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-search"></i>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section hero">
+      <img
+        data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_3840/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png"
+        data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_3840/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3840w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_3584/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3584w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_3328/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3328w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_3072/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3072w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_2816/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2816w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_2560/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2560w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_2304/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2304w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_2048/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2048w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1792/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1792w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1536/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1536w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1280/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1280w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1024/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1024w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_768/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 768w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_512/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 512w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_256/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 256w"
+        data-sizes="auto"
+        alt=""
+        role="presentation"
+        class="jsx-1566996889 ImageV2 ImageV2--object-fit-cover HeroSlide__background-image lazyautosizes Lazy--loaded"
+        sizes="978px"
+        srcset="
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_3840/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3840w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_3584/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3584w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_3328/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3328w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_3072/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 3072w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_2816/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2816w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_2560/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2560w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_2304/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2304w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_2048/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 2048w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1792/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1792w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1536/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1536w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1280/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1280w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1024/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png 1024w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_768/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png   768w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_512/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png   512w,
+          //cdn.allbirds.com/image/upload/f_auto,q_auto,w_256/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png   256w
+        "
+        src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_3840/cms/aRrRXJBq2zOpYND3fcrMY/4753492c20bf9adea2e391f10072bbf3/22Q2-Rosie-HP-Desktop.png"
+      />
+      <div class="hero-content">
+        <div class="content">
+          <h2>Drizzle Proof</h2>
+          <p>
+            Our water-repellent Mizzle collection is back and rainy-er than
+            ever.
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button-hovered">Shop Men</button>
+          <button class="button-hovered">Shop Women</button>
+        </div>
+      </div>
+    </section>
+    <section class="section two paddingSame">
+      <div class="heading">
+        <h3>Our Favourites</h3>
+      </div>
+      <div class="textCarousel">
+        <p class="carouselText">For everyday</p>
+        <p class="carouselText">For running</p>
+        <p class="carouselText">For Lounge</p>
+      </div>
+      <div class="cardWrapper">
+        <div class="card cardOne">
+          <div class="imageWrapper">
+            <img
+              src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_600,b_rgb:f5f5f5/cms/6oZ8ou7sk3W0HpleXEzXw6/2d38cbb0e3765da95cb66be59ea1f854/FW22-Core-Category-Carousel-TR.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardContent">
+            <h3 class="cardItemsName">Tree Runner</h3>
+          </div>
+          <div class="cardLine"></div>
+          <div class="cardDes">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 60w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_56/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 56w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_52/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 52w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_48/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 48w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_44/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 44w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_40/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 40w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 ProductCard__details-description-image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="11px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 60w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_56/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 56w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_52/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 52w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_48/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 48w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_44/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 44w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_40/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 40w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg"
+            />
+            <p>Light and Breezy Sneaker</p>
+          </div>
+          <div class="cardBtns">
+            <button class="cardBtn btnMen">Shop Men</button>
+            <button class="cardBtn btnWomen">Shop Women</button>
+          </div>
+        </div>
+        <div class="card cardTwo">
+          <div class="imageWrapper">
+            <img
+              src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_600,b_rgb:f5f5f5/cms/70PwvBWTJ7IlhjqXkl4AsO/6f9fecc5a68ecf7be4bcf938fc910415/FW22-Core-Story-Carousel-Cold-Weather.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardContent">
+            <h3 class="cardItemsName">Wool Runner</h3>
+          </div>
+          <div class="cardLine"></div>
+          <div class="cardDes">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 60w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_56/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 56w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_52/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 52w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_48/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 48w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_44/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 44w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_40/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 40w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 ProductCard__details-description-image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="30px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 60w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_56/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 56w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_52/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 52w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_48/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 48w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_44/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 44w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_40/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg 40w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/6wU7S0P7XLcX12M8UaXr8L/8db5af80e310b9e514ead9156bc3ec67/Wool.jpg"
+            />
+            <p>Cozy Sneaker</p>
+          </div>
+          <div class="cardBtns">
+            <button class="cardBtn btnMen">Shop Men</button>
+            <button class="cardBtn btnWomen">Shop Women</button>
+          </div>
+        </div>
+        <div class="card cardTwo">
+          <div class="imageWrapper">
+            <img
+              src="https://cdn.allbirds.com/image/upload/f_auto,q_auto,w_600,b_rgb:f5f5f5/cms/7CyA3KohDCYM1HdYh7sX3j/bbbb87ffdcd59e2d1e0412f3350f3a63/Women_s_Breezers.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cardContent">
+            <h3 class="cardItemsName">Tree Breezers</h3>
+          </div>
+          <div class="cardLine"></div>
+          <div class="cardDes">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 60w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_56/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 56w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_52/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 52w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_48/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 48w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_44/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 44w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_40/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 40w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 ProductCard__details-description-image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="30px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 60w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_56/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 56w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_52/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 52w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_48/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 48w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_44/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 44w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_40/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg 40w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_60/cms/36yzlsOoiqElrog4oYvkV9/070f3b2a87f2679218299e58cdc399ef/Tree.jpg"
+            />
+            <p>Breezy Flat</p>
+          </div>
+          <div class="cardBtns">
+            <button class="cardBtn btnMen">Shop Men</button>
+            <button class="cardBtn btnWomen">Shop Women</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="middleImage">
+      <div class="middleImageWrapper">
+        <img
+          data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg"
+          data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1440w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1344w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1248/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1248w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1152/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1152w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1056/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1056w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_960/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 960w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_864/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 864w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_768/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 768w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_672/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 672w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_576/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 576w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_480/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 480w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_384/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 384w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_288/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 288w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_192/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 192w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_96/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 96w"
+          data-sizes="auto"
+          alt=""
+          role="presentation"
+          class="jsx-1566996889 ImageV2 ImageV2--object-fit-cover HomepageV2SecondaryPromoHero__background-image lazyautosizes Lazy--loaded ls-is-cached"
+          sizes="1085px"
+          srcset="
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1440w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1344w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1248/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1248w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1152/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1152w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1056/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg 1056w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_960/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   960w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_864/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   864w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_768/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   768w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_672/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   672w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_576/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   576w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_480/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   480w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_384/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   384w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_288/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   288w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_192/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg   192w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_96/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg     96w
+          "
+          src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/6lCJSKv5xe45CFHNDDrcF5/5e6dc81ac9107da15588520b2565d7a7/Secondary_Hero_Desktop.jpg"
+        />
+      </div>
+    </div>
+    <section class="middleContent paddingSame">
+      <div class="wrapper">
+        <h3>Dasher Relays You’ll Bat An Eye At</h3>
+        <p>
+          These limited edition Dasher Relays were inspired by New Zealand’s
+          pekapeka-tou-roa (AKA the long-tailed bat), and they’ll be flying away
+          before long.
+        </p>
+        <div class="buttons">
+          <button class="button-hovered dark">Shop Men</button>
+          <button class="button-hovered dark">Shop Women</button>
+        </div>
+      </div>
+    </section>
+    <section class="newArrivals paddingSame">
+      <h3>New Arrivals</h3>
+      <div class="secondCardWrapper">
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Women's Tree Breezer</h3>
+            <p>Limited Edition color, Deep Emerald</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/42Y88yhB41N4XD4SlfKDJN/6799728c88d43000f7ccf4064ce60218/AB0098M_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_INDIGO_BLIZZARD.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Indigo</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="300px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/WaRxQzgG6ZKUxUATMLLGQ/81a5e30f74906afbd954bb4b486731c8/AA003ZM_SHOE_LEFT_GLOBAL_MENS_BOTY_REVERSE_DASHER_DARK_COCOA_HAZY_COCOA.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+              data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 962w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 888w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 814w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 740w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 666w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 592w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 518w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 444w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 370w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 296w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 222w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 148w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 74w"
+              data-sizes="auto"
+              alt=""
+              class="jsx-1566996889 ImageV2 CarouselCard__image lazyautosizes ls-is-cached Lazy--loaded"
+              sizes="147px"
+              srcset="
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1110w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1036/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png 1036w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_962/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   962w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_888/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   888w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_814/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   814w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_740/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   740w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_666/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   666w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_592/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   592w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_518/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   518w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_444/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   444w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_370/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   370w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_296/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   296w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_222/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   222w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_148/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png   148w,
+                //cdn.allbirds.com/image/upload/f_auto,q_auto,w_74/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png     74w
+              "
+              src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1110/cms/1LxfY5RJ0L4b7HAT7EmFBr/ef1817b47f77c5a34161419d7d72c68b/AB008TM_SHOE_LEFT_GLOBAL_MENS_WOOL_RUNNER_HAZY_BEIGE_NATURAL_WHITE.png"
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="middleImage">
+      <div class="middleImageWrapper">
+        <img
+          data-src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg"
+          data-srcset="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1440w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1344w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1248/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1248w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1152/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1152w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1056/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1056w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_960/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 960w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_864/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 864w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_768/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 768w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_672/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 672w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_576/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 576w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_480/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 480w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_384/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 384w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_288/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 288w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_192/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 192w,//cdn.allbirds.com/image/upload/f_auto,q_auto,w_96/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 96w"
+          data-sizes="auto"
+          alt=""
+          role="presentation"
+          class="jsx-1566996889 ImageV2 ImageV2--object-fit-cover HomepageV2SecondaryPromoHero__background-image lazyautosizes Lazy--loaded ls-is-cached"
+          sizes="1091px"
+          srcset="
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1440w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1344/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1344w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1248/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1248w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1152/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1152w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_1056/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg 1056w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_960/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   960w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_864/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   864w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_768/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   768w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_672/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   672w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_576/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   576w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_480/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   480w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_384/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   384w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_288/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   288w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_192/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg   192w,
+            //cdn.allbirds.com/image/upload/f_auto,q_auto,w_96/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg     96w
+          "
+          src="//cdn.allbirds.com/image/upload/f_auto,q_auto,w_1440/cms/2EZ5XFobHeIAl5kJWb25R1/a75dceb530d84b5a075e590f12947b9d/Desktop-Secondary_Hero-Plant.jpg"
+        />
+      </div>
+    </div>
+    <section class="middleContent paddingSame">
+      <div class="wrapper">
+        <h3>Designed To Be Classic. Made For The Future.</h3>
+        <p>
+          The new Pacer is a classic style made for a super natural future.
+          Featuring Plant Leather, a sustainable alternative leather that's 100%
+          plastic-free.
+        </p>
+        <div class="buttons">
+          <button class="button-hovered dark">Shop Men</button>
+          <button class="button-hovered dark">Shop Women</button>
+        </div>
+      </div>
+    </section>
+    <section class="newArrivals paddingSame">
+      <h3>Shop The Collections</h3>
+      <div class="secondCardWrapper">
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/FW22-Core-Story-Carousel-Rainy.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>The Wet Weather Shop</h3>
+            <p>
+              "Water repellent coating and premium Merino wool keep you cozy,
+              dry, and most importantly, outside."
+            </p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              src="/3d/22Q4-CL-Discover-Card-Shoes-Full_Color-1110x1110__1_.avif"
+              alt=""
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>New Arrivals</h3>
+            <p>
+              The latest styles and limited edition colors that you can only
+              find here (while they last, that is).
+            </p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>The R&R Collection</h3>
+            <p>
+              Comfortable and casually tasteful, these versatile modern classics
+              are designed to become your go-to for rest and recreation.
+            </p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="middleImage">
+      <div class="middleImageWrapper">
+        <img
+          src="/middle img/Secondary_Homepage_Desktop_-_Sustainability.avif"
+          alt=""
+        />
+      </div>
+    </div>
+    <section class="middleContent paddingSame">
+      <div class="wrapper">
+        <h3>Designed To Be Classic. Made For The Future.</h3>
+        <p>
+          The new Pacer is a classic style made for a super natural future.
+          Featuring Plant Leather, a sustainable alternative leather that's 100%
+          plastic-free.
+        </p>
+        <div class="buttons">
+          <button class="button-hovered dark">Our Sustainable Practice</button>
+        </div>
+      </div>
+    </section>
+    <section class="newArrivals paddingSame">
+      <h3>Stories</h3>
+      <div class="secondCardWrapper">
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/4d/ReRun-Site-StoryCard.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>All Birds Rerun <sup>TM</sup></h3>
+            <p>
+              "We think it’s a good place to start. Explore our approach to
+              sustainable footwear, sustainable apparel and reducing our
+              environmental impact. Check out our progress so far, and our bold
+              list of commitments for 2025."
+            </p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/4d/22Q2_AdizeroxAllbirds_Story-Carousel.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Adidas X Allbirds <sup>tm</sup></h3>
+            <p>
+              The latest styles and limited edition colors that you can only
+              find here (while they last, that is).
+            </p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img
+              src="/4d/21Q3_perform-apparel_story-carousel_1110x1110_alt.avif"
+              alt=""
+            />
+          </div>
+          <div class="secondCardContent">
+            <h3>Planet Friendly Active Wear</h3>
+            <p>
+              Comfortable and casually tasteful, these versatile modern classics
+              are designed to become your go-to for rest and recreation.
+            </p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+        <div class="secondCard">
+          <div class="secondCardImgWrapper">
+            <img src="/3d/AN001LW_FIG_W_HAZY_Indigo_1377.avif" alt="" />
+          </div>
+          <div class="secondCardContent">
+            <h3>Men's Wool Runner</h3>
+            <p>Limited Edition color, Hazy Beige</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="wantDibs paddingSame">
+      <div class="wantDibsContent">
+        <h3>Want First Dibs?</h3>
+        <p>
+          Join our email list and be the first to know about new limited edition
+          products, material innovations, and lots of other fun updates.
+        </p>
+        <form action="post">
+          <input type="email" placeholder="Type your Email Address" />
+          <button class="cardBtn">Sign Up</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <ul class="footerContentWrapper">
+        <h4>HELP</h4>
+        <li>1-888-963-8944</li>
+        <li>1-814-251-9966</li>
+        <li>(Text) help@allbirds.com</li>
+        <li>Returns/Exchanges FAQ/</li>
+        <li>Contact Us</li>
+        <li>Afterpay</li>
+      </ul>
+      <ul class="footerContentWrapper">
+        <h4>SHOP</h4>
+        <li>Men's Shoes</li>
+        <li>Women's Shoes</li>
+        <li>Men's Apparel</li>
+        <li>Women's Apparel App</li>
+        <li>Refer a Friend</li>
+        <li>Download the Allbirds</li>
+      </ul>
+      <ul class="footerContentWrapper">
+        <h4>COMPANY</h4>
+        <li>Our Stores</li>
+        <li>Our Story Our</li>
+        <li>Materials</li>
+        <li>Sustainability</li>
+        <li>Investors</li>
+        <li>Partnerships</li>
+      </ul>
+      <div class="footerContentWrapper">
+        <h4>Follow the Flock</h4>
+        <p>
+          Exclusive offers, a heads up on new things, and sightings of Allbirds
+          in the wild. Oh, we have cute sheep, too. #weareallbirds
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
