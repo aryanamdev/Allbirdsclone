@@ -20,7 +20,21 @@ p {
 }
 /* header {
 } */
-
+.preLoader {
+  background-color: #e9efef;
+  z-index: 10000;
+  width: 100%;
+  display: block;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.preLoader img {
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+}
 nav {
   padding: 0.5em 1em;
   display: flex;
