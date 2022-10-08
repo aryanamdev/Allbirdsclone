@@ -13,10 +13,10 @@ img {
   padding: 0.5em 1em;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 /* header {
 } */
@@ -92,8 +92,8 @@ nav {
 .hero-content {
   /* float: left;
   position: absolute; */
-  margin-inline: 1em;
-  margin-block: 2em;
+  margin-inline: 4em;
+  margin-bottom: 5em;
   z-index: 3;
   /* margin-top: 15em; */
   color: white !important;
@@ -106,9 +106,11 @@ nav {
 .hero-content .content h2 {
   /* font-size: 2rem; */
   margin-bottom: 0.3em;
+  font-size: 3.5rem;
 }
 .hero-content .content p {
   margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 .navItemsContainer-icons {
   display: none;
@@ -119,7 +121,7 @@ nav {
 }
 .buttons button {
   padding: 0.7em 1.5em;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   border: none;
   font-weight: bold;
@@ -157,7 +159,7 @@ nav {
 }
 
 .textCarousel p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .textCarousel > * {
@@ -172,7 +174,10 @@ nav {
 .cardWrapper {
   /* display: flex; */
   display: grid;
-  overflow-x: scroll;
+  justify-content: center;
+  /* place-content: center; */
+  width: 100%;
+  /* overflow-x: scroll; */
   grid-template-columns: 330px 330px 330px;
   column-gap: 1em;
   padding: 0.5em;
@@ -215,7 +220,7 @@ nav {
   margin-bottom: 1rem;
 }
 .cardDes > p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin-top: 0.2rem;
   color: rgb(78, 78, 78);
 }
@@ -241,7 +246,7 @@ nav {
 .cardBtn {
   padding: 0.5em 0.6em;
   letter-spacing: 2px;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   border: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -329,7 +334,7 @@ nav {
   margin-bottom: 0.5rem;
 }
 .secondCardContent > p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 sup {
   font-size: 0.5rem;
@@ -348,7 +353,7 @@ sup {
   gap: 0.7em;
 }
 .wantDibsContent p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #5e5e5e;
   margin-bottom: 1rem;
 }
@@ -359,7 +364,7 @@ form {
   width: 100%;
 }
 input::placeholder {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   padding: 0.5em;
   margin-bottom: 0.2em;
   color: rgb(194, 194, 194);
@@ -385,7 +390,7 @@ footer {
 footer > * {
   /* width: 30%; */
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -393,10 +398,10 @@ footer > * {
   margin-bottom: 1.5rem;
 }
 footer p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 footer h4 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 footer p,
 footer li {
@@ -432,7 +437,7 @@ footer li {
     list-style: none;
     gap: 1.6em;
     text-transform: capitalize;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .navItemsContainer > li {
@@ -440,7 +445,7 @@ footer li {
     /* font-size: 0.7rem; */
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .navItemsContainer-icons {
@@ -455,7 +460,7 @@ footer li {
     display: flex;
     /* justify-content: ;/*/
     /* margin-left: 1.2em; */
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     gap: 5em;
