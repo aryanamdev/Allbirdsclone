@@ -191,7 +191,7 @@ nav {
   justify-content: center;
   /* place-content: center; */
   width: 100%;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
   grid-template-columns: 330px 330px 330px;
   column-gap: 1em;
   padding: 0.5em;
